@@ -1,0 +1,68 @@
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csprojAssemblyReference.cache
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.cache
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.lref
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.pdb
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\Utilities.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\Newtonsoft.Json.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\Utilities.pdb
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.g.resources
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.Properties.Resources.resources
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.GenerateResource.cache
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.CopyComplete
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.pdb
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\ZeroFormatter.Interfaces.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\Constants.dll
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\bin\Debug\Constants.pdb
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.g.cs
+C:\GITHUB\RoboCup2020\C#\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.baml
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csprojAssemblyReference.cache
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.g.cs
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.cache
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.lref
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.dll
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.pdb
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.dll
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.pdb
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\Utilities.dll
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\Utilities.pdb
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.baml
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.g.resources
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.Properties.Resources.resources
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.GenerateResource.cache
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.CopyComplete
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.dll
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.pdb
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\Utilities.dll
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\bin\Debug\Utilities.pdb
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csprojAssemblyReference.cache
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.g.cs
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.cache
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.lref
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.baml
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.g.resources
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.Properties.Resources.resources
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.GenerateResource.cache
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.CoreCompileInputs.cache
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.CopyComplete
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.dll
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.pdb
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.dll
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\bin\Debug\WpfAsservissementDisplay.pdb
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\bin\Debug\Utilities.dll
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\bin\Debug\Utilities.pdb
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csprojAssemblyReference.cache
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.g.cs
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.cache
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay_MarkupCompile.lref
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\AsservissementDisplay.baml
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.g.resources
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.Properties.Resources.resources
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.GenerateResource.cache
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.CoreCompileInputs.cache
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.csproj.CopyComplete
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.dll
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\WpfAsservissementDisplay\obj\Debug\WpfAsservissementDisplay.pdb

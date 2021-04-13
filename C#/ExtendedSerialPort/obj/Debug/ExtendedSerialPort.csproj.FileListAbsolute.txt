@@ -1,0 +1,32 @@
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\Valentin\Desktop\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\Valentin\Desktop\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\Valentin\Desktop\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\Valentin\Desktop\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\Valentin\Desktop\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\TP-EO-5\Desktop\ExtendedSerialPort (3)\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\TP-EO-5\Desktop\ExtendedSerialPort (3)\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\TP-EO-5\Desktop\ExtendedSerialPort (3)\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\TP-EO-5\Desktop\ExtendedSerialPort (3)\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\TP-EO-5\Desktop\ExtendedSerialPort (3)\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\GitHub\Robot_Elyes_Zantour\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\Table 9\Desktop\Ressources\Robot_Elyes_Zantour-master\NeoC#\C#\RobotInterface\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb

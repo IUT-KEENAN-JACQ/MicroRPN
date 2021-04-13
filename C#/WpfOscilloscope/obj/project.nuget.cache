@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cYpWwUrtR9yNf66Z+uTVd8N1GOFspzSbhKK4REZutPQgqzneRMrsoK71FbXDJuNKz4gXovgZJJytrT8r165sNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Table 9\\Desktop\\Ressources\\MicroRPN\\C#\\WpfOscilloscope\\WpfOscilloscopeControl.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Table 9\\.nuget\\packages\\scichart\\6.3.0.13476\\scichart.6.3.0.13476.nupkg.sha512"
+  ],
+  "logs": []
+}
