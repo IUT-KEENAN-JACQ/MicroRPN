@@ -2,8 +2,9 @@
 #include "timer.h"
 #include "IO.h"
 #include "ADC.h"
+#include "Send.h"
 
-long timestamp;
+long timestamp = 0;
 unsigned char toggle = 0;
 
 //Initialisation d'un timer 32 bits
@@ -26,8 +27,10 @@ void InitTimer23(void) {
 void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void)
     {
          IFS0bits.T1IF = 0;
-         ADC1StartConversionSequence();
          timestamp++;
+         ADC1StartConversionSequence();
+         //GetData();
+         LED_ORANGE = !LED_ORANGE;
     }
 
 //Interruption du timer 32 bits sur 23
@@ -118,14 +121,14 @@ void SetFreqTimer4(float freq)
         if(FCY /freq / 64 > 65535)
     {
         T4CONbits.TCKPS = 0b11; //11 = 1:256 prescaler value
-        PR1 = (int)(FCY / freq / 256);
+        PR4 = (int)(FCY / freq / 256);
     }
         else
-        PR1 = (int)(FCY / freq / 64);
+        PR4 = (int)(FCY / freq / 64);
     }
         else
-        PR1 = (int)(FCY / freq / 8);
+        PR4 = (int)(FCY / freq / 8);
     }
         else
-        PR1 = (int)(FCY / freq);
+        PR4 = (int)(FCY / freq);
     }

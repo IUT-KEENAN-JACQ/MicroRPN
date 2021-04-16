@@ -16,6 +16,9 @@ namespace Utilities
     public class StateData
     {
         public UInt32 timestamp { get; set; }
+        public UInt32[] timestampArray { get; set; }
         public float unprocessedValue { get; set; }
+        public float[] unprocessedValueArray { get; set; }
+        
     }
 }

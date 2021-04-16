@@ -35,6 +35,7 @@ namespace WpfOscilloscopeControl
                 lineRenderableSerie.Name = "lineRenderableSerie"+lineId.ToString();
                 lineRenderableSerie.DataSeries = lineDictionary[lineId];
                 lineRenderableSerie.DataSeries.AcceptsUnsortedData = true;
+
                 if(useYAxisRight)
                     lineRenderableSerie.YAxisId = "RightYAxis";
                 else
@@ -42,6 +43,7 @@ namespace WpfOscilloscopeControl
 
                 //Ajout de la ligne dans le scichart
                 sciChart.RenderableSeries.Add(lineRenderableSerie);
+                sciChart.ZoomExtents();
             }             
         }
 

@@ -4,6 +4,7 @@
 #endif
 
 void SendData(void);
+void GetData(void);
 
 #ifdef	__cplusplus
 #endif

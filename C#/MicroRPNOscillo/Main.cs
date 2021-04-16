@@ -14,6 +14,7 @@ using WpfOscilloscopeControl;
 using SciChart.Charting.Visuals;
 using WpfOscilloRPNInterface;
 using System.Collections.Concurrent;
+using System.Diagnostics;
 
 namespace MicroRPNOscilloNS
 {
@@ -40,6 +41,7 @@ namespace MicroRPNOscilloNS
                 wpfOscilloscope = new WpfOscilloscope();
                 wpfOscilloRPNInterface = new WpfOscilloRPN();
                 wpfOscilloRPNInterface.Loaded += RegisterRobotInterfaceEvents;
+                communication.OnNewDataEvent += wpfOscilloRPNInterface.DataUpdate;
                 wpfOscilloRPNInterface.ShowDialog();
             });
             t1.SetApartmentState(ApartmentState.STA);
@@ -55,10 +57,10 @@ namespace MicroRPNOscilloNS
 
     public class Communication
     {
-        StateData stateData;
-        ConcurrentQueue<Message> messageQueue = new ConcurrentQueue<Message>();
-        //Message message;
+        StateData stateData = new StateData();
+        //ConcurrentQueue<Message> messageQueue = new ConcurrentQueue<Message>();
         ReliableSerialPort serialPort1;
+        Stopwatch watch = new Stopwatch();
 
         public Communication()
         {
@@ -73,6 +75,8 @@ namespace MicroRPNOscilloNS
             {
                 DecodeMessage(e.Data[i]);
             }
+
+            //watch.Start();
         }
 
         byte CalculateChecksum(int msgFunction, int msgPayloadLength, byte[] msgPayload)
@@ -120,7 +124,7 @@ namespace MicroRPNOscilloNS
             CheckSum
         }
 
-        //Definitions
+        //definitions
         StateReception rcvState = StateReception.Waiting;
 
         byte[] msgDecodedPayload;
@@ -133,7 +137,7 @@ namespace MicroRPNOscilloNS
 
         private void DecodeMessage(byte c)
         {
-            Console.Write("0x" + c.ToString("X2") + " ");
+            //Console.Write("0x" + c.ToString("X2") + " ");
             switch (rcvState)
             {
                 case StateReception.Waiting:
@@ -188,8 +192,8 @@ namespace MicroRPNOscilloNS
                     //Console.WriteLine("CHECKSUM : " + msgCalculatedChecksum.ToString("X2"));
                     if (msgDecodedChecksum == msgCalculatedChecksum)
                     {
-                        messageQueue.Enqueue(new Message(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload));
-                        MessageProcessor(msgDecodedFunction, msgDecodedPayload, 8); //msgDecodedPayloadLength
+                        //messageQueue.Enqueue(new Message(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload));
+                        MessageProcessor(msgDecodedFunction, msgDecodedPayload, msgDecodedPayloadLength); //msgDecodedPayloadLength
                     }
                     else
                     {
@@ -204,31 +208,53 @@ namespace MicroRPNOscilloNS
             }
         }
 
-        private void MessageProcessor(UInt16 function, byte[] payload, byte length)
+        private void MessageProcessor(UInt16 function, byte[] payload, ushort length)
         {
             //A faire
             if (function == 16)
             {
-                byte[] tab = payload.GetRange(0, 4);
-                if (BitConverter.IsLittleEndian)
-                    Array.Reverse(tab);
-                stateData.timestamp = BitConverter.ToUInt32(tab, 0);
+                //watch.Start();
+                int y = 0, index, indexMax = length/8;
+                stateData.timestampArray = new UInt32[indexMax];
+                stateData.unprocessedValueArray = new float[indexMax];
 
-                tab = payload.GetRange(4, 4);
-                stateData.unprocessedValue = tab.GetFloat();
+                for(index = 0; index < indexMax; index++)
+                {
+                    byte[] tab = payload.GetRange(y, 4);
+                    if (BitConverter.IsLittleEndian)
+                        Array.Reverse(tab);
+                    stateData.timestampArray[index] = BitConverter.ToUInt32(tab, 0);
+                    y = y + 4;
 
-                Console.WriteLine("Timestamp : " + stateData.timestamp + " Value : " + stateData.unprocessedValue);
-                OnNewData(stateData.timestamp, stateData.unprocessedValue);
+                    tab = payload.GetRange(y, 4);
+                    stateData.unprocessedValueArray[index] = tab.GetFloat();
+                    y = y + 4;
+                }
+
+                OnNewData(stateData.timestampArray, stateData.unprocessedValueArray);
+
+                //byte[] tab = payload.GetRange(0, 4);
+                //if (BitConverter.IsLittleEndian)
+                //    Array.Reverse(tab);
+                //stateData.timestamp = BitConverter.ToUInt32(tab, 0);
+
+                //tab = payload.GetRange(4, 4);
+                //stateData.unprocessedValue = tab.GetFloat();
+
+                //Console.WriteLine("Timestamp : " + stateData.timestamp + " Value : " + stateData.unprocessedValue);
+                //watch.Stop();
+                //Console.WriteLine(watch.Elapsed.TotalMilliseconds.ToString());
+                //OnNewData(stateData.timestamp, stateData.unprocessedValue);
             }
         }
 
         public event EventHandler<StateData> OnNewDataEvent;
-        public virtual void OnNewData(UInt32 timestamp, float unprocessedValue)
+        public virtual void OnNewData(UInt32[] timestampArray, float[] unprocessedValueArray)
         {
             var handler = OnNewDataEvent;
             if (handler != null)
             {
-                handler(this, new StateData { timestamp = timestamp, unprocessedValue = unprocessedValue });
+                handler(this, new StateData { timestampArray = timestampArray, unprocessedValueArray = unprocessedValueArray });
             }
         }
         

@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/IO.c</file>
+            <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/Send.h</file>
+            <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/main.c</file>
             <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/Utilities.c</file>
             <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/ADC.c</file>
             <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/Send.c</file>
+            <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/UART_protocole.c</file>
+            <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/ChipConfig.c</file>
             <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/timer.h</file>
             <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/timer.c</file>
+            <file>file:/C:/Users/Table%209/Desktop/Ressources/MicroRPN/MicroRPN.X/IO.h</file>
         </group>
     </open-files>
 </project-private>

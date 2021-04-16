@@ -22,34 +22,44 @@ namespace WpfOscilloRPNInterface
     /// </summary>
     public partial class WpfOscilloRPN : Window
     {
-        UInt32 Timestamp;
-        float UnprocessedValue;
+        StateData stateDataAffichage = new StateData();
         DispatcherTimer timerAffichage;
-        //int i;
-
+        int index = 0;
         public WpfOscilloRPN()
         {
             InitializeComponent();
             OscilloRPNMotor.AddOrUpdateLine(1, 100, "Ligne 1", true);
 
             timerAffichage = new DispatcherTimer();
-            timerAffichage.Interval = new TimeSpan(0, 0, 0, 0, 20);
+            timerAffichage.Interval = new TimeSpan(0, 0, 0, 0, 1);
             timerAffichage.Tick += TimerAffichageTick;
             timerAffichage.Start();
         }
 
         private void TimerAffichageTick(object sender, EventArgs e)
         {
-            Point point = new Point(UnprocessedValue, Timestamp);
-            //i++;
-            //Point point = new Point(i, i);
-            OscilloRPNMotor.AddPointToLine(1, point);
+            //Point point = new Point(stateDataAffichage.timestamp, stateDataAffichage.unprocessedValue);
+            //OscilloRPNMotor.AddPointToLine(1, point);
+
+            //Decompresser les tableaux
+            //Ajouter un nouveau point @1khz
         }
 
-        public void DataUpdate(object sender, StateData stateData)
+        public void DataUpdate(object sender, StateData stateDataTrans)
         {
-            Timestamp = stateData.timestamp;
-            UnprocessedValue = stateData.unprocessedValue;
+            //stateDataAffichage.timestamp = stateDataTrans.timestamp;
+            //stateDataAffichage.unprocessedValue = stateDataTrans.unprocessedValue;
+
+            //Faire rentrer les tableaux
+            stateDataAffichage.timestampArray = stateDataTrans.timestampArray;
+            stateDataAffichage.unprocessedValueArray = stateDataTrans.unprocessedValueArray;
+
+            for (index = 0; index <= 9; index++)
+            {
+                Point point = new Point(stateDataAffichage.timestampArray[index], stateDataAffichage.unprocessedValueArray[index]);
+                OscilloRPNMotor.AddPointToLine(1, point); 
+            }
+
         }
     }
 }

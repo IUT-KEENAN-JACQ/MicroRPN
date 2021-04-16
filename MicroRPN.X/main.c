@@ -24,7 +24,11 @@ int main(void)
         InitUART();
         
         while (1) 
-            {
-            }
-         
+        {
+//            if(ADCIsConversionFinished())
+//            {
+//                ADCClearConversionFinishedFlag();
+//                ADCGetResult();
+//            }
+        }
     }

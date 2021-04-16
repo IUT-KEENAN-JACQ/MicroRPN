@@ -30,3 +30,4 @@ C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\bin\Debug\Ext
 C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
 C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
 C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\Table 9\Desktop\Ressources\MicroRPN\C#\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
