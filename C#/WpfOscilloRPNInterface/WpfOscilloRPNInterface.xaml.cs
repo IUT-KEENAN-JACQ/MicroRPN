@@ -23,15 +23,18 @@ namespace WpfOscilloRPNInterface
     public partial class WpfOscilloRPN : Window
     {
         StateData stateDataAffichage = new StateData();
+        StateData stateDataAffichageBuf = new StateData();
+        Queue<Point> incomingDataQueue = new Queue<Point>();
+        RollingList<Point> pointList = new RollingList<Point>(1000);
         DispatcherTimer timerAffichage;
-        int index = 0;
+
         public WpfOscilloRPN()
         {
             InitializeComponent();
             OscilloRPNMotor.AddOrUpdateLine(1, 100, "Ligne 1", true);
 
             timerAffichage = new DispatcherTimer();
-            timerAffichage.Interval = new TimeSpan(0, 0, 0, 0, 1);
+            timerAffichage.Interval = new TimeSpan(0, 0, 0, 0, 50);
             timerAffichage.Tick += TimerAffichageTick;
             timerAffichage.Start();
         }
@@ -43,6 +46,14 @@ namespace WpfOscilloRPNInterface
 
             //Decompresser les tableaux
             //Ajouter un nouveau point @1khz
+
+            while (incomingDataQueue.Count() > 0)
+                pointList.Add(incomingDataQueue.Dequeue());
+
+            OscilloRPNMotor.UpdatePointListOfLine(1, pointList._list.ToList<Point>());
+
+            incomingDataQueue.Clear();
+            pointList.Clear();
         }
 
         public void DataUpdate(object sender, StateData stateDataTrans)
@@ -51,14 +62,20 @@ namespace WpfOscilloRPNInterface
             //stateDataAffichage.unprocessedValue = stateDataTrans.unprocessedValue;
 
             //Faire rentrer les tableaux
-            stateDataAffichage.timestampArray = stateDataTrans.timestampArray;
-            stateDataAffichage.unprocessedValueArray = stateDataTrans.unprocessedValueArray;
-
-            for (index = 0; index <= 9; index++)
+            //stateDataAffichage.timestampArray = stateDataTrans.timestampArray;
+            //stateDataAffichage.unprocessedValueArray = stateDataTrans.unprocessedValueArray;
+                        
+            for (int i = 0; i < stateDataTrans.timestampArray.Length; i++)
             {
-                Point point = new Point(stateDataAffichage.timestampArray[index], stateDataAffichage.unprocessedValueArray[index]);
-                OscilloRPNMotor.AddPointToLine(1, point); 
+                incomingDataQueue.Enqueue(new Point(stateDataTrans.timestampArray[i], stateDataTrans.unprocessedValueArray[i]));
+                //Console.WriteLine("Timestamp : " + stateDataAffichage.timestampArray[indexB] + " Value : " + stateDataAffichage.unprocessedValueArray[indexB]);
             }
+
+            //for (index = 0; index <= 9; index++)
+            //{
+            //    Point point = new Point(stateDataAffichage.timestampArray[index], stateDataAffichage.unprocessedValueArray[index]);
+            //    OscilloRPNMotor.AddPointToLine(1, point);
+            //}
 
         }
     }

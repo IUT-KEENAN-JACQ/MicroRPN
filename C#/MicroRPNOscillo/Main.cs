@@ -64,19 +64,18 @@ namespace MicroRPNOscilloNS
 
         public Communication()
         {
-            serialPort1 = new ReliableSerialPort("COM4", 115200, Parity.None, 8, StopBits.One);
+            serialPort1 = new ReliableSerialPort("COM5", 115200, Parity.None, 8, StopBits.One);
             serialPort1.DataReceived += SerialPort1_DataReceived;
             serialPort1.Open();
         }
 
         private void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
         {
+            watch.Restart();
             for (int i = 0; i < e.Data.Length; i++)
             {
                 DecodeMessage(e.Data[i]);
             }
-
-            //watch.Start();
         }
 
         byte CalculateChecksum(int msgFunction, int msgPayloadLength, byte[] msgPayload)
@@ -143,6 +142,7 @@ namespace MicroRPNOscilloNS
                 case StateReception.Waiting:
                     if (c == 0xFE)
                     {
+                        //Console.Write("0x" + c.ToString("X2") + " ");
                         rcvState = StateReception.FunctionMSB;
                     }
                     break;
@@ -242,8 +242,6 @@ namespace MicroRPNOscilloNS
                 //stateData.unprocessedValue = tab.GetFloat();
 
                 //Console.WriteLine("Timestamp : " + stateData.timestamp + " Value : " + stateData.unprocessedValue);
-                //watch.Stop();
-                //Console.WriteLine(watch.Elapsed.TotalMilliseconds.ToString());
                 //OnNewData(stateData.timestamp, stateData.unprocessedValue);
             }
         }

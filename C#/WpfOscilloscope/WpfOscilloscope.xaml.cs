@@ -1,5 +1,6 @@
 ﻿using SciChart.Charting.Model.DataSeries;
 using SciChart.Charting.Visuals.RenderableSeries;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
@@ -144,6 +145,8 @@ namespace WpfOscilloscopeControl
             {
                 lineDictionary[lineId].Clear();
                 lineDictionary[lineId].Append(pointList.Select(e => e.X).ToList(), pointList.Select(e2 => e2.Y).ToList());
+
+                Console.WriteLine(DateTime.Now.Millisecond);
             }
         }
     }
