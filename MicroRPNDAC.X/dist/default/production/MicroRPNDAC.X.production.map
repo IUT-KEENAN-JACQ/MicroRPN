@@ -111,11 +111,11 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x658           0x984  (2436)
-.text                        0x858               0x774           0xb2e  (2862)
-.dinit                       0xfcc                0x40            0x60  (96)
-.text                       0x100c                0x24            0x36  (54)
+.text                        0x858               0x78c           0xb52  (2898)
+.dinit                       0xfe4                0x40            0x60  (96)
+.text                       0x1024                0x24            0x36  (54)
 
-                 Total "program" memory used (bytes):         0x1548  (5448) 4%
+                 Total "program" memory used (bytes):         0x156c  (5484) 4%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -252,14 +252,14 @@ External Symbols in Program Memory (by address):
                   0x000e1a                  _CB_RX1_GetRemainingSize
                   0x000e3a                  _CB_RX1_GetDataSize
                   0x000e46                  _InitIO
-                  0x000e6c                  _InitOscillator
-                  0x000eb2                  _InitUART
-                  0x000ee2                  _SendMessageDirect
-                  0x000f1a                  _InitSDADC
-                  0x000f80                  _InitADC
-                  0x000fc6                  _StartADCSequence
-                  0x00100c                  _main
-                  0x00101e                  _InitDAC
+                  0x000e84                  _InitOscillator
+                  0x000eca                  _InitUART
+                  0x000efa                  _SendMessageDirect
+                  0x000f32                  _InitSDADC
+                  0x000f98                  _InitADC
+                  0x000fde                  _StartADCSequence
+                  0x001024                  _main
+                  0x001036                  _InitDAC
 
 External Symbols in Program Memory (by name):
 
@@ -273,22 +273,22 @@ External Symbols in Program Memory (by name):
                   0x000d64                  _CB_TX1_Get
                   0x000d96                  _CB_TX1_IsTranmitting
                   0x000d9e                  _CB_TX1_RemainingSize
-                  0x000f80                  _InitADC
-                  0x00101e                  _InitDAC
+                  0x000f98                  _InitADC
+                  0x001036                  _InitDAC
                   0x000e46                  _InitIO
-                  0x000e6c                  _InitOscillator
-                  0x000f1a                  _InitSDADC
+                  0x000e84                  _InitOscillator
+                  0x000f32                  _InitSDADC
                   0x000bfa                  _InitTimer1
-                  0x000eb2                  _InitUART
+                  0x000eca                  _InitUART
                   0x000ab2                  _LimitToInterval
                   0x000a5a                  _Max
                   0x000a86                  _Min
                   0x000afc                  _Modulo2PIAngleRadian
                   0x000d0a                  _SendMessage
-                  0x000ee2                  _SendMessageDirect
+                  0x000efa                  _SendMessageDirect
                   0x000d84                  _SendOne
                   0x000c30                  _SetFreqTimer1
-                  0x000fc6                  _StartADCSequence
+                  0x000fde                  _StartADCSequence
                   0x000858                  _UartCalculateChecksum
                   0x000952                  _UartDecodeMessage
                   0x00089c                  _UartEncodeAndSendMessage
@@ -330,7 +330,7 @@ External Symbols in Program Memory (by name):
                   0x000b94                  _getBytesFromInt32
                   0x000b4e                  _getDouble
                   0x000b32                  _getFloat
-                  0x00100c                  _main
+                  0x001024                  _main
 
 Memory Configuration
 
@@ -480,20 +480,20 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x51c2
+.debug_info       0x000000       0x51c0
  *(.debug_info)
  .debug_info      0x000000        0x137 build/default/production/Main.o
- .debug_info      0x000137        0xeae build/default/production/IO.o
- .debug_info      0x000fe5        0x9de build/default/production/Timers.o
- .debug_info      0x0019c3        0x125 build/default/production/ChipConfig.o
- .debug_info      0x001ae8        0x95a build/default/production/SDADC.o
- .debug_info      0x002442        0x2f6 build/default/production/DAC.o
- .debug_info      0x002738        0xe20 build/default/production/ADC.o
- .debug_info      0x003558        0x883 build/default/production/UART.o
- .debug_info      0x003ddb        0x481 build/default/production/UART_protocole.o
- .debug_info      0x00425c        0x4c8 build/default/production/CB_TX1.o
- .debug_info      0x004724        0x632 build/default/production/CB_RX1.o
- .debug_info      0x004d56        0x46c build/default/production/Utilities.o
+ .debug_info      0x000137        0xeac build/default/production/IO.o
+ .debug_info      0x000fe3        0x9de build/default/production/Timers.o
+ .debug_info      0x0019c1        0x125 build/default/production/ChipConfig.o
+ .debug_info      0x001ae6        0x95a build/default/production/SDADC.o
+ .debug_info      0x002440        0x2f6 build/default/production/DAC.o
+ .debug_info      0x002736        0xe20 build/default/production/ADC.o
+ .debug_info      0x003556        0x883 build/default/production/UART.o
+ .debug_info      0x003dd9        0x481 build/default/production/UART_protocole.o
+ .debug_info      0x00425a        0x4c8 build/default/production/CB_TX1.o
+ .debug_info      0x004722        0x632 build/default/production/CB_RX1.o
+ .debug_info      0x004d54        0x46c build/default/production/Utilities.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0xa17
@@ -511,20 +511,20 @@ __CONFIG1
  .debug_abbrev    0x000810        0x15e build/default/production/CB_RX1.o
  .debug_abbrev    0x00096e         0xa9 build/default/production/Utilities.o
 
-.debug_line       0x000000        0xa5e
+.debug_line       0x000000        0xa62
  *(.debug_line)
  .debug_line      0x000000         0x3b build/default/production/Main.o
- .debug_line      0x00003b        0x10d build/default/production/IO.o
- .debug_line      0x000148        0x134 build/default/production/Timers.o
- .debug_line      0x00027c         0x1a build/default/production/ChipConfig.o
- .debug_line      0x000296        0x126 build/default/production/SDADC.o
- .debug_line      0x0003bc         0xff build/default/production/DAC.o
- .debug_line      0x0004bb        0x120 build/default/production/ADC.o
- .debug_line      0x0005db        0x113 build/default/production/UART.o
- .debug_line      0x0006ee         0x8e build/default/production/UART_protocole.o
- .debug_line      0x00077c        0x139 build/default/production/CB_TX1.o
- .debug_line      0x0008b5        0x135 build/default/production/CB_RX1.o
- .debug_line      0x0009ea         0x74 build/default/production/Utilities.o
+ .debug_line      0x00003b        0x111 build/default/production/IO.o
+ .debug_line      0x00014c        0x134 build/default/production/Timers.o
+ .debug_line      0x000280         0x1a build/default/production/ChipConfig.o
+ .debug_line      0x00029a        0x126 build/default/production/SDADC.o
+ .debug_line      0x0003c0         0xff build/default/production/DAC.o
+ .debug_line      0x0004bf        0x120 build/default/production/ADC.o
+ .debug_line      0x0005df        0x113 build/default/production/UART.o
+ .debug_line      0x0006f2         0x8e build/default/production/UART_protocole.o
+ .debug_line      0x000780        0x139 build/default/production/CB_TX1.o
+ .debug_line      0x0008b9        0x135 build/default/production/CB_RX1.o
+ .debug_line      0x0009ee         0x74 build/default/production/Utilities.o
 
 .debug_frame      0x000000        0x5c6
  *(.debug_frame)
@@ -540,18 +540,18 @@ __CONFIG1
  .debug_frame     0x0003ba         0xd4 build/default/production/CB_RX1.o
  .debug_frame     0x00048e        0x138 build/default/production/Utilities.o
 
-.debug_str        0x000000        0x2b3
+.debug_str        0x000000        0x2b2
  *(.debug_str)
- .debug_str       0x000000         0x5f build/default/production/IO.o
- .debug_str       0x00005f         0x2e build/default/production/Timers.o
- .debug_str       0x00008d         0x48 build/default/production/SDADC.o
- .debug_str       0x0000d5          0xc build/default/production/DAC.o
- .debug_str       0x0000e1         0x62 build/default/production/ADC.o
- .debug_str       0x000143         0x27 build/default/production/UART.o
- .debug_str       0x00016a         0xc7 build/default/production/UART_protocole.o
- .debug_str       0x000231         0x38 build/default/production/CB_TX1.o
- .debug_str       0x000269         0x33 build/default/production/CB_RX1.o
- .debug_str       0x00029c         0x17 build/default/production/Utilities.o
+ .debug_str       0x000000         0x5e build/default/production/IO.o
+ .debug_str       0x00005e         0x2e build/default/production/Timers.o
+ .debug_str       0x00008c         0x48 build/default/production/SDADC.o
+ .debug_str       0x0000d4          0xc build/default/production/DAC.o
+ .debug_str       0x0000e0         0x62 build/default/production/ADC.o
+ .debug_str       0x000142         0x27 build/default/production/UART.o
+ .debug_str       0x000169         0xc7 build/default/production/UART_protocole.o
+ .debug_str       0x000230         0x38 build/default/production/CB_TX1.o
+ .debug_str       0x000268         0x33 build/default/production/CB_RX1.o
+ .debug_str       0x00029b         0x17 build/default/production/Utilities.o
 
 .debug_loc
  *(.debug_loc)
@@ -2331,96 +2331,96 @@ LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x000108        0x5e4
+                  0x000108        0x5e2
  .debug_pubtypes
                   0x000108         0x12 build/default/production/Main.o
  .debug_pubtypes
-                  0x00011a        0x140 build/default/production/IO.o
+                  0x00011a        0x13e build/default/production/IO.o
  .debug_pubtypes
-                  0x00025a         0xb2 build/default/production/Timers.o
+                  0x000258         0xb2 build/default/production/Timers.o
  .debug_pubtypes
-                  0x00030c         0x12 build/default/production/ChipConfig.o
+                  0x00030a         0x12 build/default/production/ChipConfig.o
  .debug_pubtypes
-                  0x00031e         0xdf build/default/production/SDADC.o
+                  0x00031c         0xdf build/default/production/SDADC.o
  .debug_pubtypes
-                  0x0003fd         0x42 build/default/production/DAC.o
+                  0x0003fb         0x42 build/default/production/DAC.o
  .debug_pubtypes
-                  0x00043f        0x146 build/default/production/ADC.o
+                  0x00043d        0x146 build/default/production/ADC.o
  .debug_pubtypes
-                  0x000585         0x99 build/default/production/UART.o
+                  0x000583         0x99 build/default/production/UART.o
  .debug_pubtypes
-                  0x00061e         0x25 build/default/production/UART_protocole.o
+                  0x00061c         0x25 build/default/production/UART_protocole.o
  .debug_pubtypes
-                  0x000643         0x3c build/default/production/CB_TX1.o
+                  0x000641         0x3c build/default/production/CB_TX1.o
  .debug_pubtypes
-                  0x00067f         0x5b build/default/production/CB_RX1.o
+                  0x00067d         0x5b build/default/production/CB_RX1.o
  .debug_pubtypes
-                  0x0006da         0x12 build/default/production/Utilities.o
+                  0x0006d8         0x12 build/default/production/Utilities.o
 
 __c30_signature
-                  0x0006ec         0xba
+                  0x0006ea         0xba
  __c30_signature
-                  0x0006ec          0x6 build/default/production/Main.o
+                  0x0006ea          0x6 build/default/production/Main.o
  __c30_signature
-                  0x0006f2          0x6 build/default/production/IO.o
+                  0x0006f0          0x6 build/default/production/IO.o
  __c30_signature
-                  0x0006f8          0x6 build/default/production/Timers.o
+                  0x0006f6          0x6 build/default/production/Timers.o
  __c30_signature
-                  0x0006fe          0x6 build/default/production/ChipConfig.o
+                  0x0006fc          0x6 build/default/production/ChipConfig.o
  __c30_signature
-                  0x000704          0x6 build/default/production/SDADC.o
+                  0x000702          0x6 build/default/production/SDADC.o
  __c30_signature
-                  0x00070a          0x6 build/default/production/DAC.o
+                  0x000708          0x6 build/default/production/DAC.o
  __c30_signature
-                  0x000710          0x6 build/default/production/ADC.o
+                  0x00070e          0x6 build/default/production/ADC.o
  __c30_signature
-                  0x000716          0x6 build/default/production/UART.o
+                  0x000714          0x6 build/default/production/UART.o
  __c30_signature
-                  0x00071c          0x6 build/default/production/UART_protocole.o
+                  0x00071a          0x6 build/default/production/UART_protocole.o
  __c30_signature
-                  0x000722          0x6 build/default/production/CB_TX1.o
+                  0x000720          0x6 build/default/production/CB_TX1.o
  __c30_signature
-                  0x000728          0x6 build/default/production/CB_RX1.o
+                  0x000726          0x6 build/default/production/CB_RX1.o
  __c30_signature
-                  0x00072e          0x6 build/default/production/Utilities.o
+                  0x00072c          0x6 build/default/production/Utilities.o
  __c30_signature
-                  0x000734          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt0_extended24.o)
+                  0x000732          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt0_extended24.o)
  __c30_signature
-                  0x00073a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(data_init_24.o)
+                  0x000738          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(data_init_24.o)
  __c30_signature
-                  0x000740          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(addsf3.daeo)
+                  0x00073e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(addsf3.daeo)
  __c30_signature
-                  0x000746          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divsf3.daeo)
+                  0x000744          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divsf3.daeo)
  __c30_signature
-                  0x00074c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(feqltle.daeo)
+                  0x00074a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(feqltle.daeo)
  __c30_signature
-                  0x000752          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fgtge.daeo)
+                  0x000750          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fgtge.daeo)
  __c30_signature
-                  0x000758          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fixsfsi.daeo)
+                  0x000756          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fixsfsi.daeo)
  __c30_signature
-                  0x00075e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(floatsisf.daeo)
+                  0x00075c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(floatsisf.daeo)
  __c30_signature
-                  0x000764          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fmodf.daeo)
+                  0x000762          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fmodf.daeo)
  __c30_signature
-                  0x00076a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fmodrem.daeo)
+                  0x000768          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fmodrem.daeo)
  __c30_signature
-                  0x000770          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fpack.daeo)
+                  0x00076e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fpack.daeo)
  __c30_signature
-                  0x000776          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(funpack.daeo)
+                  0x000774          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(funpack.daeo)
  __c30_signature
-                  0x00077c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(funpack2.daeo)
+                  0x00077a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(funpack2.daeo)
  __c30_signature
-                  0x000782          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(futil.daeo)
+                  0x000780          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(futil.daeo)
  __c30_signature
-                  0x000788          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(mulsf3.daeo)
+                  0x000786          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(mulsf3.daeo)
  __c30_signature
-                  0x00078e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(errno.daeo)
+                  0x00078c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(errno.daeo)
  __c30_signature
-                  0x000794          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fcompare.daeo)
+                  0x000792          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(fcompare.daeo)
  __c30_signature
-                  0x00079a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(floatdisf.daeo)
+                  0x000798          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(floatdisf.daeo)
  __c30_signature
-                  0x0007a0          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(floatundisf.daeo)
+                  0x00079e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(floatundisf.daeo)
 
 .nbss               0x0800         0x22
  .nbss              0x0800          0xe build/default/production/UART_protocole.o
@@ -2502,7 +2502,7 @@ __c30_signature
  .ivt._U1RXInterrupt
                   0x00002a          0x2 build/default/production/CB_RX1.o
 
-.text             0x000858        0x774
+.text             0x000858        0x78c
  .text            0x000858        0x1dc build/default/production/UART_protocole.o
                   0x000858                  _UartCalculateChecksum
                   0x00089c                  _UartEncodeAndSendMessage
@@ -2535,23 +2535,23 @@ __c30_signature
                   0x000e06                  _CB_RX1_IsDataAvailable
                   0x000e1a                  _CB_RX1_GetRemainingSize
                   0x000e3a                  _CB_RX1_GetDataSize
- .text            0x000e46         0x6c build/default/production/IO.o
+ .text            0x000e46         0x84 build/default/production/IO.o
                   0x000e46                  _InitIO
-                  0x000e6c                  _InitOscillator
- .text            0x000eb2         0x68 build/default/production/UART.o
-                  0x000eb2                  _InitUART
-                  0x000ee2                  _SendMessageDirect
- .text            0x000f1a         0x66 build/default/production/SDADC.o
-                  0x000f1a                  _InitSDADC
- .text            0x000f80         0x4c build/default/production/ADC.o
-                  0x000f80                  _InitADC
-                  0x000fc6                  _StartADCSequence
+                  0x000e84                  _InitOscillator
+ .text            0x000eca         0x68 build/default/production/UART.o
+                  0x000eca                  _InitUART
+                  0x000efa                  _SendMessageDirect
+ .text            0x000f32         0x66 build/default/production/SDADC.o
+                  0x000f32                  _InitSDADC
+ .text            0x000f98         0x4c build/default/production/ADC.o
+                  0x000f98                  _InitADC
+                  0x000fde                  _StartADCSequence
 
-.dinit            0x000fcc         0x40
- .dinit           0x000fcc         0x40 data_init
+.dinit            0x000fe4         0x40
+ .dinit           0x000fe4         0x40 data_init
 
-.text             0x00100c         0x24
- .text            0x00100c         0x12 build/default/production/Main.o
-                  0x00100c                  _main
- .text            0x00101e         0x12 build/default/production/DAC.o
-                  0x00101e                  _InitDAC
+.text             0x001024         0x24
+ .text            0x001024         0x12 build/default/production/Main.o
+                  0x001024                  _main
+ .text            0x001036         0x12 build/default/production/DAC.o
+                  0x001036                  _InitDAC

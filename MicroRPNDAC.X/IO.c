@@ -1,9 +1,17 @@
 #include <xc.h>
 #include "IO.h"
 
+
+
 void InitIO()
     {
-        //Configuration des sorties : _TRISxx = 0
+    asm volatile ("MOV #OSCCON, w1 \n"
+                "MOV #0x46, w2 \n"
+                "MOV #0x57, w3 \n"
+                "MOV.b w2, [w1] \n"
+                "MOV.b w3, [w1] \n"
+                "BCLR OSCCON, #6") ;
+    //Unlock
     
         // LED
         _TRISE5 = 0; //LED Bleue
@@ -18,8 +26,17 @@ void InitIO()
         _ANSB13 = 1;
         
         //uart
-        _U1RXR = 23;
-        _RP24R = 0b00001 ;
+        _U1RXR = 2;
+        _RP12R = 0b00011;
+        
+        
+    asm volatile ("MOV #OSCCON, w1 \n"
+                "MOV #0x46, w2 \n"
+                "MOV #0x57, w3 \n"
+                "MOV.b w2, [w1] \n"
+                "MOV.b w3, [w1] \n"
+                "BSET OSCCON, #6") ;
+    //lock again
         
     }
 
