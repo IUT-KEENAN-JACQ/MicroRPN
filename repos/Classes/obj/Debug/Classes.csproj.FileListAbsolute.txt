@@ -1,0 +1,6 @@
+C:\Users\Table 9\source\repos\Classes\bin\Debug\Classes.dll
+C:\Users\Table 9\source\repos\Classes\bin\Debug\Classes.pdb
+C:\Users\Table 9\source\repos\Classes\obj\Debug\Classes.csprojAssemblyReference.cache
+C:\Users\Table 9\source\repos\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Table 9\source\repos\Classes\obj\Debug\Classes.dll
+C:\Users\Table 9\source\repos\Classes\obj\Debug\Classes.pdb

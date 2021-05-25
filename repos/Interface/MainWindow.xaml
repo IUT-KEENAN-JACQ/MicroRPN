@@ -1,0 +1,15 @@
+﻿<Window x:Name="MainWindow1" x:Class="Interface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface"
+        mc:Ignorable="d"
+        Title="SuperEnregistreur3000" Height="450" Width="800" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize" Icon="incon.png">
+    <Grid>
+        <Button Content="Mettre en Liste" Height="136" Margin="94,0,0,83" VerticalAlignment="Bottom" Click="Button_Click" FontSize="24" HorizontalAlignment="Left" Width="248" Cursor="Hand"/>
+        <Button x:Name="Enregistrer" Content="Exporter en CSV" Height="136" Margin="0,0,94,83" VerticalAlignment="Bottom" Click="Button_Click_1" Cursor="Hand" FontSize="24" HorizontalAlignment="Right" Width="248" Background="#FFDDDDDD"/>
+        <Image HorizontalAlignment="Left" Height="110" Margin="94,40,0,0" VerticalAlignment="Top" Width="606" Source="hyhyhy.png"/>
+
+    </Grid>
+</Window>

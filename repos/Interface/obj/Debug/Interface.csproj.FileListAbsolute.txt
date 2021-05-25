@@ -1,0 +1,15 @@
+C:\Users\Table 9\source\repos\Interface\bin\Debug\Interface.exe.config
+C:\Users\Table 9\source\repos\Interface\bin\Debug\Interface.exe
+C:\Users\Table 9\source\repos\Interface\bin\Debug\Interface.pdb
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\Table 9\source\repos\Interface\obj\Debug\MainWindow.g.cs
+C:\Users\Table 9\source\repos\Interface\obj\Debug\App.g.cs
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface_MarkupCompile.cache
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface_MarkupCompile.lref
+C:\Users\Table 9\source\repos\Interface\obj\Debug\MainWindow.baml
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.g.resources
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.Properties.Resources.resources
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.csproj.GenerateResource.cache
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.exe
+C:\Users\Table 9\source\repos\Interface\obj\Debug\Interface.pdb
