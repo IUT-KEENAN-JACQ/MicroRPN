@@ -34,26 +34,26 @@ void GetData()
 
 void SendData()
 {   
-    int x, y = 0;
-    unsigned char dataPayload[80];
-    //LED_ORANGE = !LED_ORANGE;
+//    int x, y = 0;
+//    unsigned char dataPayload[80];
+//    //LED_ORANGE = !LED_ORANGE;
+//    
+//    for(x = 0; x < 10; x++)
+//    {
+//        getBytesFromInt32(dataPayload, y, timestampArray[x]);
+//        y = y+4;
+//        getBytesFromFloat(dataPayload, y, voltsArray[x]);
+//        y = y+4;
+//        
+//        //dataPayload[y] = dataPayload[y]; 
+//    }
+//    
+//    UartEncodeAndSendMessage(DATA, 80, dataPayload);
     
-    for(x = 0; x < 10; x++)
-    {
-        getBytesFromInt32(dataPayload, y, timestampArray[x]);
-        y = y+4;
-        getBytesFromFloat(dataPayload, y, voltsArray[x]);
-        y = y+4;
-        
-        //dataPayload[y] = dataPayload[y]; 
-    }
-    
-    UartEncodeAndSendMessage(DATA, 80, dataPayload);
-    
-//    volts = ADCGetResult() * 3.3 / 4096 * 3.2;
-//    unsigned char dataPayload[8];
-//    getBytesFromInt32(dataPayload, 0, timestamp);
-//    getBytesFromFloat(dataPayload, 4, volts);
-//    UartEncodeAndSendMessage(DATA, 8, dataPayload);
+    volts = ADCGetResult() * 3.3 / 4096 * 3.2;
+    unsigned char dataPayload[8];
+    getBytesFromInt32(dataPayload, 0, timestamp);
+    getBytesFromFloat(dataPayload, 4, volts);
+    UartEncodeAndSendMessage(DATA, 8, dataPayload);
 }
        
